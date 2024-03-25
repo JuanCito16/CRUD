@@ -3,6 +3,12 @@
 @section('contenido')
 <div class="container text-center">
     <h1 class="display-4 mb-4">CRUD Personas</h1>
+    <form action="{{ route('personas.index') }}" method="GET" class="mb-4">
+        <div class="input-group">
+            <input type="text" class="form-control" name="search" placeholder="Buscar..." value="{{ request('search') }}">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </form>
     @if(Session::has('success'))
     <div class="alert alert-success" role="alert">
         {{ Session::get('success') }}

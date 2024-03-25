@@ -1,4 +1,4 @@
-<table class="table table-striped table-bordered table-hover">
+<table id="miTabla" class="table table-striped table-bordered table-hover">
     <thead class="bg-primary text-white">
         <tr>
             <th scope="col">#</th>
