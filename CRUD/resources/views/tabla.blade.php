@@ -27,7 +27,7 @@
 
             <!-- Modal editar -->
             <div class="modal fade" id="modalEditar{{ $item->id }}" tabindex="-1" aria-labelledby="modalEditarLabel{{ $item->id }}" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog animated-modal">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="modalEditarLabel{{ $item->id }}">Editar Persona</h5>

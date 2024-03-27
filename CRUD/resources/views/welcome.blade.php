@@ -10,19 +10,19 @@
         </div>
     </form>
     @if(Session::has('success'))
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-success animated-alert" role="alert">
         {{ Session::get('success') }}
     </div>
     @endif
 
     @if(Session::has('error'))
-    <div class="alert alert-danger" role="alert">
+    <div class="alert alert-danger animated-alert" role="alert">
         {{ Session::get('error') }}
     </div>
     @endif
 
     @if ($errors->any())
-    <div class="alert alert-danger" role="alert">
+    <div class="alert alert-danger animated-alert" role="alert">
         <ul class="list-unstyled mb-0">
             @foreach ($errors->all() as $error)
             <li>{{ $error }}</li>
