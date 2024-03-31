@@ -9,15 +9,9 @@ use Illuminate\Support\Facades\Validator;
 
 class PersonasController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
-        $search = $request->input('search');
-        $datos = Personas::query()
-            ->where('nombre', 'LIKE', "%{$search}%")
-            ->orWhere('apellido', 'LIKE', "%{$search}%")
-            ->orWhere('correo', 'LIKE', "%{$search}%")
-            ->orWhere('telefono', 'LIKE', "%{$search}%")
-            ->paginate(10);
+        $datos = Personas::all();
         return view('welcome', compact('datos'));
     }
 
